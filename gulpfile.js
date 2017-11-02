@@ -39,7 +39,7 @@ gulp.task("compile-js", function() {
             noImplicitAny: true,
             outFile: 'application.js'
         }))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(config.publicDir))
         .on('end', browserSync.reload);
 });
